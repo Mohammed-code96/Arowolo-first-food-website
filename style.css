@@ -1,0 +1,210 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+body{
+  background: black;
+  text-rendering: optimizeLegibility;
+  line-height: 2;
+  user-select: none;
+}
+nav{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+nav a{
+  text-transform: capitalize;
+  font-size: 0.7em;
+  text-decoration: none;
+  color: #fff;
+}
+nav a:hover{
+  text-decoration: underline;
+}
+.hero h1{
+  font-size: 1.5em;
+  color: mintcream;
+  font-family: fantasy;
+  line-height: 1.2;
+  text-align: left;
+}
+img{
+  width: 100%;
+  display: block;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.description{
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  font-weight: 200;
+  font-size: 0.5em;
+}
+.hero_section{
+  padding-inline: 1em;
+  margin: auto;
+  max-width: 100rem;
+}
+.hero_display{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1em;
+}
+.hero{
+  width:20vh;
+}
+.CTA{
+  display: inline;
+  padding: 5px;
+  text-decoration: none;
+  background: #E69C24;
+  color: whitesmoke;
+  margin-top: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.6em;
+  outline-offset: 5px;
+  outline: solid 2px lightcyan;
+
+}
+.description2{
+  text-align: center;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: 300;
+  text-transform: capitalize;
+  font-size: 0.5em;
+}
+.product{
+  padding-block: 1em;
+  margin: 0 auto;
+}
+.flex-items{
+  display: flex;
+  flex-flow: wrap row;
+  
+  column-gap: 0.5em;
+  row-gap: 0.5em;
+}
+.title{
+  color: white;
+  line-height: 1;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+.price{
+  color: darkorange;
+  font-size: 0.5em;
+  font-weight: 400;
+}
+.about{
+  color: lightcyan;
+  line-height: 1;
+  font-size: 0.4em;
+  font-weight: 230;
+  
+}
+.Food:hover{
+  transform: translateX(2px);
+  outline: dotted orange 1.5px;
+  border-radius: 3px;
+}
+.Food{
+  flex: 1 1 23%;
+  transition: transform 0.5s ease-in;
+  padding: 3.5px;
+}
+h2{
+  color: lightcyan;
+  text-align: center;
+  line-height: 1.1;
+  font-size: 1.2em;
+  margin-top: 30px;
+  text-transform: capitalize;
+}
+.exploit{
+  color: lightcyan;
+  text-align: center;
+  line-height: 1.1;
+  font-size: 0.7em;
+  font-weight: 300;
+}
+form{
+  text-align: center;
+}
+input,textarea{
+  min-width: 300px;
+  min-height: 30px;
+  background: peachpuff;
+  border-radius: 20px;
+  outline: 2px dashed white;
+  padding: 7px;
+  margin: 5px;
+ 
+}
+.submit{
+  background: orange;
+  min-width: 70px;
+  color: white;
+  outline-offset: 3px;
+}
+footer{
+  color: #fff;
+  line-height: 1.1;
+  margin: 10px;
+}
+footer a{
+  color: tomato;
+  text-decoration: none;
+}
+@media (min-width: 50em) {
+  nav a{
+    font-size: 2em;
+  }
+.hero h1{
+    font-size: 5em;
+  }
+  .description,.description2{
+    font-size: 1.5em;
+  }
+  .CTA{
+    font-size: 2em;
+  }
+  h2{
+    font-size: 2.5em;
+  }
+  .title{
+    font-size: 1.4em;
+  }
+  .price{
+    font-size: 1em;
+    color: greenyellow;
+  }
+  .about{
+    font-size: 0.8em;
+  }
+  .exploit{
+    font-size: 1em;
+  }
+  textarea,input{
+    min-width: 600px;
+    min-height: 60px;
+  }
+  .Food:hover{
+    outline: orange 5px dashed;
+    transform: translateY(7px);
+  }
+  .submit{
+    font-size: 1.2em;
+    min-width: 80px;
+    min-height: 40px;
+  }
+  footer{
+    font-size: 1.5em;
+  }
+}
